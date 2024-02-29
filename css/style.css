@@ -469,6 +469,9 @@ a:hover {
   padding: 116px 0;
   overflow: hidden;
 }
+.who-are-you-area-content .title-xl {
+  line-height: 1.25em;
+}
 .who-are-you-area-content p {
   color: #473849;
 }
