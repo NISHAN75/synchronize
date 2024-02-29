@@ -256,7 +256,7 @@
     width: 14.5px;
     height: 2px;
     margin-bottom: 3px;
-}
+  }
   .open-menu.active .responsive-bar .bar:last-child {
     transform: rotate(45deg) translate(-4px, -4px);
   }
@@ -330,21 +330,21 @@
   }
   .footer-logo-box {
     text-align: center;
-}
-.footer-area {
-  padding-top: 42px;
-  padding-bottom: 35px;
-}
-.open-menu.active .responsive-bar .bar:first-child {
-  transform: rotate(-45deg) translate(-4px, 4px);
-}
+  }
+  .footer-area {
+    padding-top: 42px;
+    padding-bottom: 35px;
+  }
+  .open-menu.active .responsive-bar .bar:first-child {
+    transform: rotate(-45deg) translate(-4px, 4px);
+  }
 }
 @media (max-width: 380px) {
   .navbar-brand {
     width: 80px;
     height: 23px;
-}
-.open-menu.active .responsive-bar .bar:first-child {
-  transform: rotate(-45deg) translate(-4px, 4px);
-}
+  }
+  .open-menu.active .responsive-bar .bar:first-child {
+    transform: rotate(-45deg) translate(-4px, 4px);
+  }
 }
