@@ -195,6 +195,11 @@ a:hover {
   padding-right: 0;
   padding-left: 0;
 }
+.navbar-brand {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-right: 0;
+}
 .headroom {
   position: fixed;
   width: 100%;
@@ -218,6 +223,7 @@ a:hover {
   font-size: 18px;
   font-weight: 400;
   color: #301432;
+  padding: 0;
 }
 .button-img {
   width: 24px;
@@ -226,13 +232,32 @@ a:hover {
 .button-area {
   margin-left: 37px;
 }
-.dropdown-menu {
-  border: 0;
-  padding: 0;
+.dropdown-hit {
+  position: relative;
 }
-.dropdown-item {
-  padding: 0 12px;
+.show-dropdown-menu {
+  border: 0;
+  background: #fff;
+  padding: 5px 12px 5px 10px;
+  border-radius: 0 0 9px 9px;
+  position: absolute;
+  top: 27px;
+  left: 0;
+  height: auto;
+  opacity: 0;
+  visibility: hidden;
+}
+.dropdown-item-link {
+  padding: 0;
   color: #301432;
+  font-size: 16px;
+  padding-bottom: 3px;
+}
+
+
+.dropdown-hit:hover .show-dropdown-menu{
+  opacity: 1;
+  visibility: visible;
 }
 /* mobile responsive design */
 .open-menu {
@@ -302,22 +327,21 @@ a:hover {
   font-size: 20px;
   color: #ffff;
   font-weight: 600;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 .mobile-nav-info {
   max-width: 600px;
 }
-.mobile-nav-info ul li {
-  position: relative;
-  padding: 10px 0;
-}
-.mobile-nav-info ul li::before {
+.mobile-nav-iteam::before,
+.dropdown-item-link::before {
   position: absolute;
   left: 0;
   bottom: 0;
   height: 0.5px;
   width: 100%;
   background-color: #e8d1e5;
-  opacity: 30%;
+  opacity: 35%;
   content: "";
 }
 .mobile-dropdown-item {
@@ -369,7 +393,7 @@ a:hover {
 }
 .box-1 {
   background-color: #301432;
-  padding: 49px 62px 94px 62px;
+  padding: 49px 62px 30px 62px;
   margin-bottom: 21px;
   height: 446px;
 }

@@ -29,8 +29,9 @@ $('.open-menu').click(function() {
   });
 //   dorpdown box open
     $('.open-dorpdown-box').click(function() {
-        $('.mobile-dorpdown').slideToggle(5000);
+        $('.mobile-dorpdown').slideToggle();
     });
+
 
     function stickyButtonPosition() {
         const container = document.querySelectorAll(".container")[1];
@@ -45,6 +46,14 @@ $('.open-menu').click(function() {
     window.addEventListener("resize", function() {
         stickyButtonPosition();
     });
+
+    // hover element
+    // $(".dropdown-hit").mouseenter(function(){
+    //     $(".show-dropdown-menu").addClass("open");
+    //   });
+    //   $("..show-dropdown-menu").mouseleave(function(){
+    //     $(this).removeClass("open");
+    //   });
 
 
 })(jQuery);
